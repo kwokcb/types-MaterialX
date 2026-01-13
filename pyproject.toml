@@ -2,6 +2,7 @@
 requires = [
   "setuptools>=77",
   "wheel",
+  "packaging>=24.2",
   "mypy>=1.0",
   "MaterialX>=1.39.4"
 ]
@@ -10,7 +11,7 @@ backend-path = [ "." ]
 
 [project]
 name = "types-MaterialX"
-version = "0.0.1"
+version = "0.1.39.5"
 description = "PEP 561 type stubs for MaterialX"
 readme = "README.md"
 authors = [

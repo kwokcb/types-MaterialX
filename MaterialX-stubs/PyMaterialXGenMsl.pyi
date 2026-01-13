@@ -1,12 +1,13 @@
 import MaterialX.PyMaterialXCore
 import MaterialX.PyMaterialXGenShader
+import typing
 
 class MslResourceBindingContext(MaterialX.PyMaterialXGenShader.HwResourceBindingContext):
-    def __init__(self, arg0: int, arg1: int) -> None:
-        """__init__(self: MaterialX.PyMaterialXGenMsl.MslResourceBindingContext, arg0: int, arg1: int) -> None"""
+    def __init__(self, arg0: typing.SupportsInt, arg1: typing.SupportsInt) -> None:
+        """__init__(self: MaterialX.PyMaterialXGenMsl.MslResourceBindingContext, arg0: typing.SupportsInt, arg1: typing.SupportsInt) -> None"""
     @staticmethod
-    def create(arg0: int, arg1: int) -> MslResourceBindingContext:
-        """create(arg0: int, arg1: int) -> MaterialX.PyMaterialXGenMsl.MslResourceBindingContext"""
+    def create(arg0: typing.SupportsInt, arg1: typing.SupportsInt) -> MslResourceBindingContext:
+        """create(arg0: typing.SupportsInt, arg1: typing.SupportsInt) -> MaterialX.PyMaterialXGenMsl.MslResourceBindingContext"""
     def emitDirectives(self, arg0: MaterialX.PyMaterialXGenShader.GenContext, arg1: MaterialX.PyMaterialXGenShader.ShaderStage) -> None:
         """emitDirectives(self: MaterialX.PyMaterialXGenMsl.MslResourceBindingContext, arg0: MaterialX.PyMaterialXGenShader.GenContext, arg1: MaterialX.PyMaterialXGenShader.ShaderStage) -> None"""
     def emitResourceBindings(self, arg0: MaterialX.PyMaterialXGenShader.GenContext, arg1: MaterialX.PyMaterialXGenShader.VariableBlock, arg2: MaterialX.PyMaterialXGenShader.ShaderStage) -> None:
